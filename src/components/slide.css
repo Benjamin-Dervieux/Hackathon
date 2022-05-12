@@ -1,0 +1,76 @@
+.slideContainer {
+  z-index: 5000;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60vh;
+  right: 0vh;
+  flex-direction: column;
+  background-color: var(--color-bg-variant);
+}
+
+.topSlide {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 20px;
+  background-color: var(--color-scroll);
+  border-radius: 50px;
+  margin: 20px 0px 20px 0px;
+}
+
+.chooseContainer {
+  margin: 0px 30px 0px 30px;
+}
+
+.chooseContainer .inputContainer p {
+  font-size: 20px;
+  color: white;
+}
+
+.inp1,
+.inp2 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.carContainer,
+.walkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 30px 0px 30px;
+  background-color: white;
+}
+
+.slideContainer button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0px 40px 0px;
+}
+
+.logo1 {
+  height: 30px;
+}
+
+.logo2 {
+  height: 30px;
+}
