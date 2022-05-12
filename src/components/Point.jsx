@@ -1,9 +1,10 @@
 import React from 'react';
+import './point.css';
 
 function Point() {
   return (
     <div>
-      <div>Point</div>
+      <div className="pointContainer">Point</div>
     </div>
   );
 }
