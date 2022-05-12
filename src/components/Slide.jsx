@@ -5,20 +5,37 @@ import man from '../assets/man.png';
 import axios from 'axios';
 
 function Slide() {
-  const [dataIn, setDataGo] = useState([]);
-  const [searchValue, setSearchValue] = useState();
+  //IN
+  const [dataIn, setDataIn] = useState([]);
+  const [searchValueIn, setSearchValueIn] = useState();
   useEffect(() => {
     axios
       .get(
-        `http://api.positionstack.com/v1/forward?access_key=4a3c6ad48e64a982b7e01cade97919a5&query=${searchValue}`
+        `http://api.positionstack.com/v1/forward?access_key=4a3c6ad48e64a982b7e01cade97919a5&query=${searchValueIn}`
       )
 
       .then((res) => {
-        setDataGo(res.data.data[0]);
+        setDataIn(res.data.data[0]);
       });
-  }, [searchValue]);
+  }, [searchValueIn]);
   console.log(dataIn);
-  console.log(searchValue);
+  console.log(searchValueIn);
+
+  //OUT
+  const [dataOut, setDataOut] = useState([]);
+  const [searchValueOut, setSearchValueOut] = useState();
+  useEffect(() => {
+    axios
+      .get(
+        `http://api.positionstack.com/v1/forward?access_key=4a3c6ad48e64a982b7e01cade97919a5&query=${searchValueOut}`
+      )
+
+      .then((res) => {
+        setDataOut(res.data.data[0]);
+      });
+  }, [searchValueOut]);
+  console.log(dataOut);
+  console.log(searchValueOut);
 
   return (
     <div className="slideContainer">
@@ -28,9 +45,12 @@ function Slide() {
           <p>Votre trajet</p>
           <input
             className="inp1"
-            onBlur={(e) => setSearchValue(e.target.value)}
+            onBlur={(e) => setSearchValueIn(e.target.value)}
           ></input>
-          <input className="inp2"></input>
+          <input
+            className="inp2"
+            onBlur={(e) => setSearchValueOut(e.target.value)}
+          ></input>
         </div>
         <div className="infoContainer">
           <div className="carContainer">
