@@ -1,3 +1,9 @@
 .pointContainer {
   background-color: var(--color-bg-variant);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 4.8rem;
+  border-radius: 23px;
+  margin: 15px 15px;
 }
