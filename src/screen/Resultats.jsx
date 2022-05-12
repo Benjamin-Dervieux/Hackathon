@@ -1,5 +1,5 @@
 import React from 'react';
-import './resultat.css';
+import './resultats.css';
 
 function Resultats() {
   return <div>Resultats</div>;
