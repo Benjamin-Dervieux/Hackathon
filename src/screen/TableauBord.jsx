@@ -1,8 +1,13 @@
 import React from 'react';
+import Historique from '../components/Historique';
 import './tableauBord.css';
 
 function TableauBord() {
-  return <div>TableauBord</div>;
+  return (
+    <div>
+      <Historique />
+    </div>
+  );
 }
 
 export default TableauBord;
