@@ -5,7 +5,6 @@ import man from '../assets/man.png';
 import axios from 'axios';
 
 function Slide() {
-  //IN
   const [dataIn, setDataIn] = useState([]);
   const [searchValueIn, setSearchValueIn] = useState();
   useEffect(() => {
@@ -21,7 +20,6 @@ function Slide() {
   console.log(dataIn);
   console.log(searchValueIn);
 
-  //OUT
   const [dataOut, setDataOut] = useState([]);
   const [searchValueOut, setSearchValueOut] = useState();
   useEffect(() => {
