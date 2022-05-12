@@ -15,7 +15,7 @@
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  height: 6rem;
+  height: 10vh;
   width: 100%;
 }
 .bottom__color-container {
@@ -26,4 +26,7 @@
   display: flex;
   align-items: center;
   margin: 30px 30px;
+}
+.btn {
+  text-decoration: none;
 }

@@ -6,7 +6,7 @@ function Point() {
   return (
     <>
       <div className="pointContainer">
-        1 243
+        1243
         <RiLeafFill
           style={{
             color: 'white',
