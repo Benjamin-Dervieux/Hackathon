@@ -4,12 +4,29 @@ import car from '../assets/car.png';
 import man from '../assets/man.png';
 import { GoogleComponent } from 'react-google-location';
 
-const API_KEY = API_KEY_FROM_GOOGLE; // how to get key - step are below
+const API_KEY = 'AIzaSyBJBgysi9fEcuWyuCIhFYj4WocBoF7Pzts'; // how to get key - step are below
 
 function Slide() {
   return (
     <div className="slideContainer">
-      <GoogleComponent apiKey={API_KEY} />
+      <div>
+        <GoogleComponent
+          apiKey={API_KEY}
+          language={'en'}
+          country={'country:in|country:us'}
+          coordinates={true}
+          currentCoordinates={{
+            lat: 41.7151377,
+            lng: 44.827096,
+          }}
+          placeholder={'Start typing location'}
+          locationBoxStyle={'custom-style'}
+          locationListStyle={'custom-style-list'}
+          onChange={(e) => {
+            this.setState({ place: e });
+          }}
+        />
+      </div>
       <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
