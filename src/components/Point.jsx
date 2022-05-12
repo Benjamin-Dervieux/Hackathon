@@ -4,9 +4,9 @@ import { RiLeafFill } from 'react-icons/ri';
 
 function Point() {
   return (
-    <div>
+    <>
       <div className="pointContainer">
-        1243
+        1 243
         <RiLeafFill
           style={{
             color: 'white',
@@ -14,7 +14,15 @@ function Point() {
           }}
         />
       </div>
-    </div>
+      <div className="bottomContainer">
+        <div className="bottom__color-container">
+          <h5>Demarrer un trajet</h5>
+        </div>
+        <div className="bottom__color-container">
+          <h5>Tableau de bord</h5>
+        </div>
+      </div>
+    </>
   );
 }
 

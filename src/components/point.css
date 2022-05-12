@@ -1,9 +1,29 @@
 .pointContainer {
   background-color: var(--color-bg-variant);
+  color: var(--color-white);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 4.8rem;
+  width: 5rem;
   border-radius: 23px;
   margin: 15px 15px;
+  padding: 0px 8px;
+}
+.bottomContainer {
+  background-color: var(--color-bg);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+}
+.bottom__color-container {
+  background-color: var(--color-bg-variant);
+  color: var(--color-white);
+  border-radius: 20px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  margin: 30px 30px;
 }
