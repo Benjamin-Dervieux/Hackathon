@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Home';
+import Home from '../screen/Home';
+import Tableaudebord from '../screen/TableauBord';
+import Resultats from '../screen/Resultats';
+import ViewLive from '../screen/ViewLive';
 
 export default function Main() {
   return (
