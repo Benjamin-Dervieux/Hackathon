@@ -4,12 +4,10 @@ import car from '../assets/car.png';
 import man from '../assets/man.png';
 import { GoogleComponent } from 'react-google-location';
 
-const API_KEY = API_KEY_FROM_GOOGLE; // how to get key - step are below
-
 function Slide() {
   return (
     <div className="slideContainer">
-      <GoogleComponent apiKey={API_KEY} />
+      <GoogleComponent />
       <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
