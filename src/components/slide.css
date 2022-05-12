@@ -4,7 +4,7 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   right: 0vh;
   flex-direction: column;
   background-color: var(--color-bg-variant);

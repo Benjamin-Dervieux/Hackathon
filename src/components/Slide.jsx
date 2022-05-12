@@ -8,7 +8,6 @@ function Slide() {
   return (
     <div className="slideContainer">
       <GoogleComponent />
-      <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
           <p>Votre trajet</p>

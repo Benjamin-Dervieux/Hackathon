@@ -1,5 +1,12 @@
 .clos {
   position: absolute;
   z-index: 50000;
-  bottom: 50vh;
+  bottom: 45.2vh;
+  left: 40vh;
+}
+.btn {
+  background: none;
+  color: black;
+  font-size: 9pt;
+  font-weight: bold;
 }

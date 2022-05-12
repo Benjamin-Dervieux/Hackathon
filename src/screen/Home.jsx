@@ -32,13 +32,15 @@ function Home({ position }) {
       </div>
       <div className="bottomContainer">
         <div className="bottom__color-container">
-          <button type="button" onClick={toggle}>
+          <button className="btn" type="button" onClick={toggle}>
             Demarrer un trajet
           </button>
           <ModalePoint revele={revele} cache={toggle} />
         </div>
         <div className="bottom__color-container">
-          <h5>Tableau de bord</h5>
+          <button type="button" className="btn">
+            Tableau de bord
+          </button>
         </div>
       </div>
     </div>
