@@ -1,5 +1,5 @@
 import React from "react";
-import Loser from "../assets/loser.jpeg";
+import "./badges.css";
 import Badge1 from "../assets/1.png";
 import Badge2 from "../assets/2.png";
 import Badge3 from "../assets/3.png";
@@ -8,19 +8,34 @@ import Badge5 from "../assets/5.png";
 import Badge6 from "../assets/6.png";
 import Badge7 from "../assets/7.png";
 import Badge8 from "../assets/8.png";
+import Badge1B from "../assets/1black.png";
+import Badge2B from "../assets/2back.png";
+import Badge3B from "../assets/3back.png";
+import Badge4B from "../assets/4back.png";
+import Badge5B from "../assets/5back.png";
+import Badge6B from "../assets/6back.png";
+import Badge7B from "../assets/7back.png";
+import Badge8B from "../assets/8back.png";
 
+const score = 1400;
 const badges = [
-  Loser,
   Badge1,
+  Badge1B,
   Badge2,
+  Badge2B,
   Badge3,
+  Badge3B,
   Badge4,
+  Badge4B,
   Badge5,
   Badge6,
+  Badge6B,
   Badge7,
+  Badge7B,
   Badge8,
+  Badge8B,
 ];
-const scores = [200, 400, 600, 800, 1000, 1200, 1400, 1600];
+
 const paliers = [
   "Palier 0",
   "Palier 1",
@@ -45,23 +60,81 @@ function updatePaliers(palier) {
   if (palier > 1600) return paliers[8];
 }
 
-function updateBadges(score) {
-  if (score < 200) return badges.Loser;
-  if (score < 400) return badges.Badge1;
-  if (score < 600) return badges.Badge2;
-  if (score < 800) return badges.Badge3;
-  if (score < 1000) return badges.Badge4;
-  if (score < 1200) return badges.Badge5;
-  if (score < 1400) return badges.Badge6;
-  if (score < 1600) return badges.Badge7;
-  if (score > 1600) return badges.Badge8;
+function updateBadges(score, index) {
+  if (index === 0) {
+    return score > 200 ? (
+      <img src={Badge1} alt="badge1" />
+    ) : (
+      <img src={Badge1B} alt="badge1-grisé" />
+    );
+  }
+  if (index === 1) {
+    return score > 400 ? (
+      <img src={Badge2} alt="badge2" />
+    ) : (
+      <img src={Badge2B} alt="badge2-grisé" />
+    );
+  }
+  if (index === 2) {
+    return score > 600 ? (
+      <img src={Badge3} alt="badge3" />
+    ) : (
+      <img src={Badge3B} alt="badge3-grisé" />
+    );
+  }
+  if (index === 3) {
+    return score > 800 ? (
+      <img src={Badge4} alt="badge4" />
+    ) : (
+      <img src={Badge4B} alt="badge4-grisé" />
+    );
+  }
+  if (index === 4) {
+    return score > 1000 ? (
+      <img src={Badge5} alt="badge5" />
+    ) : (
+      <img src={Badge5B} alt="badge5-grisé" />
+    );
+  }
+  if (index === 5) {
+    return score > 1200 ? (
+      <img src={Badge6} alt="badge6" />
+    ) : (
+      <img src={Badge6B} alt="badge6-grisé" />
+    );
+  }
+  if (index === 6) {
+    return score > 1400 ? (
+      <img src={Badge7} alt="badge7" />
+    ) : (
+      <img src={Badge7B} alt="badge7-grisé" />
+    );
+  }
+  if (index === 7) {
+    return score > 1600 ? (
+      <img src={Badge8} alt="badge8" />
+    ) : (
+      <img src={Badge8B} alt="badge8-grisé" />
+    );
+  }
 }
+console.log(badges);
 
 export default function Badges() {
   return (
     <div className="dashboard">
-      <h1>Tableau de bord</h1>
-      <div className="paliers"></div>
+      <h1 className="title">Tableau de bord</h1>
+      <div className="paliers">
+        <div>{updatePaliers(score)}</div>
+        <div>{updatePaliers(score)}</div>
+      </div>
+      <div className="allBadges">
+        <ul className="baba">
+          {badges.map((badge, index) => (
+            <li key={index}>{updateBadges(score, index)}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
