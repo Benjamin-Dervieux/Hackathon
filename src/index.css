@@ -30,3 +30,8 @@ body {
   color: #606060;
   line-height: 1.7;
 }
+
+.leaflet-container {
+  width: 100vw;
+  height: 90vh;
+}
