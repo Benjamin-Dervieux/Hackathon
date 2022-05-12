@@ -1,6 +1,7 @@
 import React from 'react';
 import '../screen/Home';
 import Slide from '../components/Slide';
+import { CgClose } from 'react-icons/cg';
 
 const ModalePoint = ({ revele, cache }) =>
   revele ? (
@@ -8,9 +9,13 @@ const ModalePoint = ({ revele, cache }) =>
       <div className="over" />
       <div className="wrap">
         <div className="mod">
-          <button type="button" className="clos" onClick={cache}>
-            <span>&time;</span>
-          </button>
+          <div className="clos">
+            <button type="button" onClick={cache}>
+              <span>
+                <CgClose />
+              </span>
+            </button>
+          </div>
           <Slide />
         </div>
       </div>
