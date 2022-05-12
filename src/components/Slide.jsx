@@ -1,32 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './slide.css';
 import car from '../assets/car.png';
 import man from '../assets/man.png';
-import { GoogleComponent } from 'react-google-location';
-
-const API_KEY = 'AIzaSyBJBgysi9fEcuWyuCIhFYj4WocBoF7Pzts'; // how to get key - step are below
+import axios from 'axios';
 
 function Slide() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get(
+        'http://api.positionstack.com/v1/forward?access_key=4a3c6ad48e64a982b7e01cade97919a5&query=Lyon'
+      )
+
+      .then((res) => {
+        setData(res.data.data[0]);
+      });
+  }, []);
+  console.log(data);
+
   return (
     <div className="slideContainer">
-      <div>
-        <GoogleComponent
-          apiKey={API_KEY}
-          language={'en'}
-          country={'country:in|country:us'}
-          coordinates={true}
-          currentCoordinates={{
-            lat: 41.7151377,
-            lng: 44.827096,
-          }}
-          placeholder={'Start typing location'}
-          locationBoxStyle={'custom-style'}
-          locationListStyle={'custom-style-list'}
-          onChange={(e) => {
-            this.setState({ place: e });
-          }}
-        />
-      </div>
       <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
