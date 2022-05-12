@@ -8,12 +8,13 @@ import {
 } from 'react-leaflet';
 import ChangeMapCenter from './ChangeMapCenter';
 import L from 'leaflet';
+import cursor from '../assets/curseur.png';
 
 // eslint-disable-next-line object-curly-newline
 export default function DisplayMap({ path, currentTrace, position, zoom }) {
   const curseur = L.icon({
-    iconUrl: '/curseur.png',
-    iconSize: [25, 25],
+    iconUrl: cursor,
+    iconSize: [50, 50],
   });
 
   return (
