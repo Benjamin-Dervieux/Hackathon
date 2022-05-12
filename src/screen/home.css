@@ -1,0 +1,5 @@
+.clos {
+  position: absolute;
+  z-index: 50000;
+  bottom: 50vh;
+}
