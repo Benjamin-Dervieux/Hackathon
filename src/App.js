@@ -10,7 +10,6 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition((p) => {
     lat = p.coords.latitude;
     lon = p.coords.longitude;
-    console.log(p.coords.latitude, p.coords.longitude);
   });
 } else geolocationActived = false;
 
