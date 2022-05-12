@@ -1,5 +1,5 @@
 import React from 'react';
-import './tableauBord';
+import './tableauBord.css';
 
 function TableauBord() {
   return <div>TableauBord</div>;
