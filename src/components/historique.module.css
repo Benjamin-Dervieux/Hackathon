@@ -1,0 +1,121 @@
+.historique {
+  background-color: #58c094;
+  width: 100%;
+  height: 5vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: absolute;
+  bottom: 10px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.wrapper {
+  height: 700px;
+  width: 100%;
+  background: #58c094;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+}
+
+.close {
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.open {
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+/* TABLEAU HISTORIQUE */
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  background-color: #58c094;
+  width: 90%;
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.pierre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  background-color: white;
+  font-family: 'Poppins';
+}
+
+.data1 {
+  width: 100px;
+  height: 30px;
+  left: 20px;
+  top: 545px;
+  border-right: 1px solid #606060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data2 {
+  width: 100px;
+  height: 30px;
+  left: 20px;
+  top: 545px;
+  border-right: 1px solid #606060;
+  line-height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data3 {
+  width: 100px;
+  height: 40px;
+  left: 20px;
+  top: 545px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
