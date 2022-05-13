@@ -1,9 +1,9 @@
+
 .containerResult {
-    width: 428px;
-    height: 926px;
+    height: 100vh;
     background: #EEF1F6;
 }
-.containerResult .title_1 {
+.title_1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -12,26 +12,30 @@
     line-height: 75px;
     display: flex;
     color: #606060;
-    padding: 70px;
+    padding: 55px;
 }
-.containerResult .bravo { 
+
+
+.bravo { 
     width: 336px;
     height: 277px;
     text-align: center;
-    margin: 0px 0px 0px 45px;
-    border: none;
+    margin: 0% 7% 0%;
     background: #FFFFFF;
 }
+
 .title_bravo { 
     font-family: 'Poppins';
     font-style: normal;
-    margin: 8px;
+    padding: 18px 0px;
     font-weight: 400;
     font-size: 30px;
     line-height: 45px;
     display: flex;
     justify-content: center;
     color: #606060;
+    align-items: center;
+    text-align: center;
 }
 .paragraphe { 
     text-align: center;
@@ -49,12 +53,12 @@
 .progressBarContainer {
     margin: 10px;
     height: 2%;
-    width: 65%;
+    width: 70%;
     background-color: white;
 }
 
 .progressBar {
-    width: 20%;
+    width: 60%;
     height: 20px;
     background-color: #58C094;
 }
@@ -66,7 +70,6 @@
 .divpalier p {
     margin: auto;
 }
-
 .auto { 
     margin: 110px 0px;
 }
@@ -76,18 +79,15 @@
 }
 
 .button_ok {
-    margin: auto 35%;
+    margin: auto 39%;
     font-family: 'Poppins';
-    width: 100px;
-    padding: 12px;
-    cursor: pointer;
-    font-weight: bolder;
+    width: 105px;
+    padding: 17px;
     background-color: white;
     border-radius: 15px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 15px;
     text-align: center;
     color: black;
-}
+
+    }

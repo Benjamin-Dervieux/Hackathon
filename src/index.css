@@ -30,6 +30,8 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #606060;
   line-height: 1.7;
+  height: 100%;
+  width: 100%;
 }
 
 .leaflet-container {
