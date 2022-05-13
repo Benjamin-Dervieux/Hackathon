@@ -1,7 +1,6 @@
 import React from 'react';
 import Point from '../components/Point';
 import { Link } from 'react-router-dom';
-//import TableauBord from '../screen/TableauBord';
 import './LevelResult.css';
 
 const LevelResult = (props) => {
