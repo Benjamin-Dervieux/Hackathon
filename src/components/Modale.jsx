@@ -22,9 +22,9 @@ const Modale = ({ revele, cache }) =>
         <div>
           <HistoriqueInfos
             data={[
-              { distance: 100, carbon: 500, point: 500 },
-              { distance: 100, carbon: 500, point: 500 },
-              { distance: 100, carbon: 500, point: 500 },
+              { distance: '1.5Km', carbon: '4.6Kg', points: 350 },
+              { distance: '3.9Km', carbon: '8.6Kg', points: 600 },
+              { distance: '0.9Km', carbon: '2.4KG', points: 120 },
             ]}
           />
         </div>

@@ -17,7 +17,7 @@ import Badge6B from '../assets/6back.png';
 import Badge7B from '../assets/7back.png';
 import Badge8B from '../assets/8back.png';
 
-const score = 1400;
+const score = 1800;
 const badges = [
   Badge1,
   Badge1B,
@@ -123,10 +123,17 @@ export default function Badges() {
   return (
     <div className="dashboard">
       <h1 className="title">Tableau de bord</h1>
+
       <div className="paliers">
-        <div>{updatePaliers(score)}</div>
+        <div>{paliers[7]}</div>
         <div>{updatePaliers(score)}</div>
       </div>
+      <div className="container-progress">
+        <div class="progressBarContainer">
+          <div class="progressBar"></div>
+        </div>
+      </div>
+
       <div className="allBadges">
         <ul className="baba">
           {badges.map((badge, index) => (

@@ -4,10 +4,12 @@ import car from '../assets/car.png';
 import man from '../assets/man.png';
 import axios from 'axios';
 import useLocalStorage from 'use-local-storage';
+import { Link } from 'react-router-dom';
 
 function Slide({ carbon }) {
   const [dataIn, setDataIn] = useLocalStorage('searchIn', []);
   const [searchValueIn, setSearchValueIn] = useState();
+
   useEffect(() => {
     axios
       .get(
@@ -34,16 +36,17 @@ function Slide({ carbon }) {
 
   return (
     <div className="slideContainer">
-      <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
           <p>Votre trajet</p>
           <input
             className="inp1"
+            placeholder="Départ :  '2, Quai Perrache, 69002 Lyon'"
             onBlur={(e) => setSearchValueIn(e.target.value)}
           ></input>
           <input
             className="inp2"
+            placeholder="Arrivée :  '12, rue de la Charité, 69002 Lyon'"
             onBlur={(e) => setSearchValueOut(e.target.value)}
           ></input>
         </div>
@@ -54,11 +57,13 @@ function Slide({ carbon }) {
           </div>
           <div className="walkContainer">
             <img className="logo2" src={man} alt=""></img>
-            <p>points</p>
+            <p className="slideParagraphe">points</p>
           </div>
         </div>
       </div>
-      <button>GO !</button>
+      <Link to="/ViewLive">
+        <button>GO !</button>
+      </Link>
     </div>
   );
 }
