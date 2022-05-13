@@ -41,15 +41,15 @@
   border-radius: 10px;
   background-color: white;
   padding-left: 5px;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .carContainer,
 .walkContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 60px;
   width: 100%;
   margin: 10px 0px 10px 0px;
@@ -80,4 +80,10 @@
   height: 40px;
   width: 30px;
   margin-left: 15px;
+}
+.slideParagraphe {
+  position: absolute;
+  font-size: 15px;
+  color: black;
+  left: 250px;
 }

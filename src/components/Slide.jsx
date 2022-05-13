@@ -43,12 +43,12 @@ function Slide() {
           <p>Votre trajet</p>
           <input
             className="inp1"
-            placeholder="'2, Quai Perrache, 69002 Lyon'"
+            placeholder="Départ :  '2, Quai Perrache, 69002 Lyon'"
             onBlur={(e) => setSearchValueIn(e.target.value)}
           ></input>
           <input
             className="inp2"
-            placeholder="'12, rue de la Charité, 69002 Lyon'"
+            placeholder="Arrivée :  '12, rue de la Charité, 69002 Lyon'"
             onBlur={(e) => setSearchValueOut(e.target.value)}
           ></input>
         </div>
