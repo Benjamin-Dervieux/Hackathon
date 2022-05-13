@@ -43,8 +43,6 @@ export default function ViewLive({ position }) {
     };
   }, [position]);
 
-  console.log(path);
-
   return (
     <div className="viewLiveContainer">
       <DisplayMap

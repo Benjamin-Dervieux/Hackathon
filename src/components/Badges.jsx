@@ -1,21 +1,21 @@
-import React from "react";
-import "./badges.css";
-import Badge1 from "../assets/1.png";
-import Badge2 from "../assets/2.png";
-import Badge3 from "../assets/3.png";
-import Badge4 from "../assets/4.png";
-import Badge5 from "../assets/5.png";
-import Badge6 from "../assets/6.png";
-import Badge7 from "../assets/7.png";
-import Badge8 from "../assets/8.png";
-import Badge1B from "../assets/1black.png";
-import Badge2B from "../assets/2back.png";
-import Badge3B from "../assets/3back.png";
-import Badge4B from "../assets/4back.png";
-import Badge5B from "../assets/5back.png";
-import Badge6B from "../assets/6back.png";
-import Badge7B from "../assets/7back.png";
-import Badge8B from "../assets/8back.png";
+import React from 'react';
+import './badges.css';
+import Badge1 from '../assets/1.png';
+import Badge2 from '../assets/2.png';
+import Badge3 from '../assets/3.png';
+import Badge4 from '../assets/4.png';
+import Badge5 from '../assets/5.png';
+import Badge6 from '../assets/6.png';
+import Badge7 from '../assets/7.png';
+import Badge8 from '../assets/8.png';
+import Badge1B from '../assets/1black.png';
+import Badge2B from '../assets/2back.png';
+import Badge3B from '../assets/3back.png';
+import Badge4B from '../assets/4back.png';
+import Badge5B from '../assets/5back.png';
+import Badge6B from '../assets/6back.png';
+import Badge7B from '../assets/7back.png';
+import Badge8B from '../assets/8back.png';
 
 const score = 1400;
 const badges = [
@@ -37,15 +37,15 @@ const badges = [
 ];
 
 const paliers = [
-  "Palier 0",
-  "Palier 1",
-  "Palier 2",
-  "Palier 3",
-  "Palier 4",
-  "Palier 5",
-  "Palier 6",
-  "Palier 7",
-  "Palier 8",
+  'Palier 0',
+  'Palier 1',
+  'Palier 2',
+  'Palier 3',
+  'Palier 4',
+  'Palier 5',
+  'Palier 6',
+  'Palier 7',
+  'Palier 8',
 ];
 
 function updatePaliers(palier) {
@@ -118,7 +118,6 @@ function updateBadges(score, index) {
     );
   }
 }
-console.log(badges);
 
 export default function Badges() {
   return (
