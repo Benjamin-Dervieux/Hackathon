@@ -10,6 +10,7 @@ function Slide() {
   //IN
   const [dataIn, setDataIn] = useState([]);
   const [searchValueIn, setSearchValueIn] = useState();
+
   useEffect(() => {
     axios
       .get(
@@ -21,7 +22,6 @@ function Slide() {
       });
   }, [searchValueIn]);
   console.log(dataIn);
-  console.log(searchValueIn);
 
   //OUT
   const [dataOut, setDataOut] = useState([]);
@@ -37,11 +37,8 @@ function Slide() {
       });
   }, [searchValueOut]);
   console.log(dataOut);
-  console.log(searchValueOut);
-
   return (
     <div className="slideContainer">
-      <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
           <p>Votre trajet</p>

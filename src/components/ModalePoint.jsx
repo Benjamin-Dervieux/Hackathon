@@ -10,9 +10,16 @@ const ModalePoint = ({ revele, cache }) =>
       <div className="wrap">
         <div className="mod">
           <div className="clos">
-            <button type="button" onClick={cache}>
+            <button className="btns" type="button" onClick={cache}>
               <span>
-                <CgClose />
+                <CgClose
+                  style={{
+                    background: '#33785b',
+                    borderRadius: '50px',
+                    color: 'white',
+                    fontSize: '20pt',
+                  }}
+                />
               </span>
             </button>
           </div>

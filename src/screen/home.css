@@ -2,4 +2,11 @@
   position: absolute;
   z-index: 50000;
   bottom: 50vh;
+  left: 40vh;
+}
+.btns {
+  background: none;
+  color: black;
+  font-size: 9pt;
+  font-weight: bold;
 }
