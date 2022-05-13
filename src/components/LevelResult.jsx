@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useLocalStorage from 'use-local-storage';
 import './LevelResult.css';
 
 const LevelResult = () => {
+  const [journalData, setJournalData] = useLocalStorage('journalData', []);
+
+  const distance = JSON.parse(localStorage.getItem('distance'));
+  const points = JSON.parse(localStorage.getItem('points'));
+
+  useEffect(() => {
+    const newDoneData = {
+      distance,
+      points,
+    };
+    setJournalData([...journalData, newDoneData]);
+  }, [setJournalData]);
+
   return (
     <div className="containerResult">
       <h1 className="title_1"> Résultat </h1>

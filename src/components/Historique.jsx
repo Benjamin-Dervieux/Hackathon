@@ -6,6 +6,7 @@ import { TiArrowUpThick } from 'react-icons/ti';
 
 function Historique() {
   const { revele, toggle } = HistoriqueModale();
+  
 
   return (
     <div className={styles.historique}>

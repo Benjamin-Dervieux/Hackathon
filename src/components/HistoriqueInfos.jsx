@@ -14,7 +14,7 @@ function HistoriqueInfos({ data }) {
             <div>Points obtenus: </div>
           </div>
         </div>
-        {data.map(({ distance, carbon, point }) => (
+        {data.map(({ distance, points, carbon }) => (
           <div className={styles.content}>
             <div className={styles.pierre}>
               <div className={styles.data1}>{distance}</div>
@@ -23,7 +23,7 @@ function HistoriqueInfos({ data }) {
               <div className={styles.data2}> {carbon}</div>
             </div>
             <div className={styles.pierre}>
-              <div className={styles.data3}> {point}</div>
+              <div className={styles.data3}> {points}</div>
             </div>
           </div>
         ))}

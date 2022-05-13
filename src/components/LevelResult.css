@@ -1,93 +1,94 @@
 .containerResult {
-    width: 428px;
-    height: 926px;
-    background: #EEF1F6;
+  width: 428px;
+  height: 926px;
+  background: #eef1f6;
 }
 .containerResult .title_1 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    justify-content: center;
-    font-size: 50px;
-    line-height: 75px;
-    display: flex;
-    color: #606060;
-    padding: 70px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  justify-content: center;
+  font-size: 50px;
+  line-height: 75px;
+  display: flex;
+  color: #606060;
+  padding: 70px;
 }
-.containerResult .bravo { 
-    width: 336px;
-    height: 277px;
-    text-align: center;
-    margin: 0px 0px 0px 45px;
-    border: none;
-    background: #FFFFFF;
+.containerResult .bravo {
+  width: 336px;
+  height: 277px;
+  text-align: center;
+  margin: 0px 0px 0px 45px;
+  border: none;
+  background: #ffffff;
 }
-.title_bravo { 
-    font-family: 'Poppins';
-    font-style: normal;
-    margin: 8px;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 45px;
-    display: flex;
-    justify-content: center;
-    color: #606060;
+.title_bravo {
+  font-family: 'Poppins';
+  font-style: normal;
+  margin: 8px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+  color: #606060;
 }
-.paragraphe { 
-    text-align: center;
-    padding: 8px;
-    background: #FFFFFF;
+.paragraphe {
+  text-align: center;
+  padding: 8px;
+  background: #ffffff;
 }
-.kiloCo2, .point { 
-    color: #58C094;
-    font-weight: bold;
+.kiloCo2,
+.point {
+  color: #58c094;
+  font-weight: bold;
 }
-.Win p { 
-    margin: 33px !important;
+.Win p {
+  margin: 33px !important;
 }
 
 .progressBarContainer {
-    margin: 10px;
-    height: 2%;
-    width: 65%;
-    background-color: white;
+  margin: 10px;
+  height: 2%;
+  width: 65%;
+  background-color: white;
 }
 
 .progressBar {
-    width: 20%;
-    height: 20px;
-    background-color: #58C094;
+  width: 20%;
+  height: 20px;
+  background-color: #58c094;
 }
 
 .divpalier {
-    display: flex;
-    justify-content: space-around !important;  
+  display: flex;
+  justify-content: space-around !important;
 }
 .divpalier p {
-    margin: auto;
+  margin: auto;
 }
 
-.auto { 
-    margin: 110px 0px;
+.auto {
+  margin: 110px 0px;
 }
-.counter { 
-    display: flex;
-    justify-content: center;
+.counter {
+  display: flex;
+  justify-content: center;
 }
 
 .button_ok {
-    margin: auto 35%;
-    font-family: 'Poppins';
-    width: 100px;
-    padding: 12px;
-    cursor: pointer;
-    font-weight: bolder;
-    background-color: white;
-    border-radius: 15px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: black;
+  margin: auto 35%;
+  font-family: 'Poppins';
+  width: 100px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: white;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: black;
 }
