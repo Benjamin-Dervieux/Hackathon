@@ -16,6 +16,8 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 
 .allBadges {
