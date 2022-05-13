@@ -3,6 +3,8 @@ import './slide.css';
 import car from '../assets/car.png';
 import man from '../assets/man.png';
 import axios from 'axios';
+import DisplayMap from './DisplayMap';
+import { Link } from 'react-router-dom';
 
 function Slide() {
   //IN
@@ -63,7 +65,9 @@ function Slide() {
           </div>
         </div>
       </div>
-      <button>GO !</button>
+      <Link to="/ViewLive">
+        <button Link={DisplayMap}>GO !</button>
+      </Link>
     </div>
   );
 }
