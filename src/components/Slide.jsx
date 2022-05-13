@@ -3,7 +3,6 @@ import './slide.css';
 import car from '../assets/car.png';
 import man from '../assets/man.png';
 import axios from 'axios';
-import DisplayMap from './DisplayMap';
 import { Link } from 'react-router-dom';
 
 function Slide() {
@@ -44,10 +43,12 @@ function Slide() {
           <p>Votre trajet</p>
           <input
             className="inp1"
+            placeholder="Départ :  '2, Quai Perrache, 69002 Lyon'"
             onBlur={(e) => setSearchValueIn(e.target.value)}
           ></input>
           <input
             className="inp2"
+            placeholder="Arrivée :  '12, rue de la Charité, 69002 Lyon'"
             onBlur={(e) => setSearchValueOut(e.target.value)}
           ></input>
         </div>
