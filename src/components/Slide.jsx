@@ -66,7 +66,7 @@ function Slide() {
         </div>
       </div>
       <Link to="/ViewLive">
-        <button Link={DisplayMap}>GO !</button>
+        <button>GO !</button>
       </Link>
     </div>
   );
