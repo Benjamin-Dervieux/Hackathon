@@ -125,7 +125,7 @@ export default function Badges() {
       <h1 className="title">Tableau de bord</h1>
 
       <div className="paliers">
-        <div>{updatePaliers(score)}</div>
+        <div>{paliers[7]}</div>
         <div>{updatePaliers(score)}</div>
       </div>
       <div className="container-progress">
