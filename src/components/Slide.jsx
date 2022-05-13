@@ -3,6 +3,7 @@ import './slide.css';
 import car from '../assets/car.png';
 import man from '../assets/man.png';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Slide() {
   //IN
@@ -42,10 +43,12 @@ function Slide() {
           <p>Votre trajet</p>
           <input
             className="inp1"
+            placeholder="'2, Quai Perrache, 69002 Lyon'"
             onBlur={(e) => setSearchValueIn(e.target.value)}
           ></input>
           <input
             className="inp2"
+            placeholder="'12, rue de la Charité, 69002 Lyon'"
             onBlur={(e) => setSearchValueOut(e.target.value)}
           ></input>
         </div>
@@ -60,7 +63,9 @@ function Slide() {
           </div>
         </div>
       </div>
-      <button>GO !</button>
+      <Link to="/ViewLive">
+        <button>GO !</button>
+      </Link>
     </div>
   );
 }
