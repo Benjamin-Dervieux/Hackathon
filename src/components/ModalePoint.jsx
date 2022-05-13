@@ -3,7 +3,7 @@ import '../screen/Home';
 import Slide from '../components/Slide';
 import { TiArrowDownThick } from 'react-icons/ti';
 
-const ModalePoint = ({ revele, cache }) =>
+const ModalePoint = ({ revele, cache, carbon }) =>
   revele ? (
     <React.Fragment>
       <div className="over" />
@@ -24,7 +24,7 @@ const ModalePoint = ({ revele, cache }) =>
               </span>
             </button>
           </div>
-          <Slide />
+          <Slide carbon={carbon} />
         </div>
       </div>
     </React.Fragment>

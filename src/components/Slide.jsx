@@ -3,11 +3,11 @@ import './slide.css';
 import car from '../assets/car.png';
 import man from '../assets/man.png';
 import axios from 'axios';
+import useLocalStorage from 'use-local-storage';
 import { Link } from 'react-router-dom';
 
-function Slide() {
-  //IN
-  const [dataIn, setDataIn] = useState([]);
+function Slide({ carbon }) {
+  const [dataIn, setDataIn] = useLocalStorage('searchIn', []);
   const [searchValueIn, setSearchValueIn] = useState();
 
   useEffect(() => {
@@ -17,13 +17,11 @@ function Slide() {
       )
 
       .then((res) => {
-        setDataIn(res.data.data[0]);
+        setDataIn([res.data.data[0].latitude, res.data.data[0].longitude]);
       });
-  }, [searchValueIn]);
-  console.log(dataIn);
+  }, [dataIn, setDataIn, searchValueIn]);
 
-  //OUT
-  const [dataOut, setDataOut] = useState([]);
+  const [dataOut, setDataOut] = useLocalStorage('searchOut', []);
   const [searchValueOut, setSearchValueOut] = useState();
   useEffect(() => {
     axios
@@ -32,10 +30,10 @@ function Slide() {
       )
 
       .then((res) => {
-        setDataOut(res.data.data[0]);
+        setDataOut([res.data.data[0].latitude, res.data.data[0].longitude]);
       });
-  }, [searchValueOut]);
-  console.log(dataOut);
+  }, [dataOut, setDataOut, searchValueOut]);
+
   return (
     <div className="slideContainer">
       <div className="chooseContainer">
@@ -55,7 +53,7 @@ function Slide() {
         <div className="infoContainer">
           <div className="carContainer">
             <img className="logo1" src={car} alt=""></img>
-            <p className="slideParagraphe">kg de Co2</p>
+            <p>{carbon}kg de Co2</p>
           </div>
           <div className="walkContainer">
             <img className="logo2" src={man} alt=""></img>
