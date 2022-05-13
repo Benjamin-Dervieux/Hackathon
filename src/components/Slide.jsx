@@ -8,6 +8,7 @@ function Slide() {
   //IN
   const [dataIn, setDataIn] = useState([]);
   const [searchValueIn, setSearchValueIn] = useState();
+
   useEffect(() => {
     axios
       .get(
