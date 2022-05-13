@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './home.css';
 import Point from '../components/Point';
 import DisplayMap from '../components/DisplayMap';
@@ -12,17 +12,13 @@ function Home({ position }) {
   ]);
   const { revele, toggle } = PointModale();
 
-  useEffect(() => {
-    let interval = null;
+  let interval = null;
 
-    interval = setInterval(() => {
-      setcurrentTrace([...currentTrace, [position.lon, position.lat]]);
-    }, 5000);
+  interval = setInterval(() => {
+    setcurrentTrace([...currentTrace, [position.lon, position.lat]]);
+  }, 5000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  });
+  clearInterval(interval);
 
   return (
     <div>
@@ -32,15 +28,15 @@ function Home({ position }) {
       </div>
       <div className="bottomContainer">
         <div className="bottom__color-container">
-          <button className="btn" type="button" onClick={toggle}>
+          <button className="btns" type="button" onClick={toggle}>
             Demarrer un trajet
           </button>
           <ModalePoint revele={revele} cache={toggle} />
         </div>
         <div className="bottom__color-container">
-          <button type="button" className="btn">
+          <a href="/Tableaudebord" className="btns">
             Tableau de bord
-          </button>
+          </a>
         </div>
       </div>
     </div>

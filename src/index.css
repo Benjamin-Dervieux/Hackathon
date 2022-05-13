@@ -15,6 +15,7 @@
   --color-bg-variant: #58c094;
   --color-white: #ffffff;
   --color-scroll: #33785b;
+  height: 100vh;
 }
 
 html {

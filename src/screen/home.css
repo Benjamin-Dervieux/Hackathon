@@ -1,10 +1,10 @@
 .clos {
   position: absolute;
   z-index: 50000;
-  bottom: 45.2vh;
+  bottom: 50vh;
   left: 40vh;
 }
-.btn {
+.btns {
   background: none;
   color: black;
   font-size: 9pt;
