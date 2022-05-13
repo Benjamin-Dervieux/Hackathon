@@ -1,0 +1,39 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.paliers {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.allBadges {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.baba {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.icon-item {
+  width: 70px;
+  height: 70px;
+}
+img {
+  width: 70px;
+  height: 70px;
+}
