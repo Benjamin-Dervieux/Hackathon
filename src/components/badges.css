@@ -1,8 +1,12 @@
+.dashboard {
+  background-color: #eef1f6;
+}
+
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  padding-top: 50px;
   font-size: 3em;
   text-align: center;
   font-weight: 400;
@@ -16,10 +20,29 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.container-progress {
+  display: flex;
+  justify-content: center;
+}
+
+.progressBarContainer {
+  margin: 10px;
+  height: 2%;
+  width: 85%;
+  background-color: white;
+}
+.progressBar {
+  width: 75%;
+  height: 20px;
+  background-color: #58c094;
 }
 
 .allBadges {
-  margin-top: 100px;
+  margin-top: 110px;
   display: flex;
   justify-content: center;
 }

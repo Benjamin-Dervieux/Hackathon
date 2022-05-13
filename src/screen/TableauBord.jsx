@@ -1,17 +1,19 @@
 import React from "react";
 import Badges from "../components/Badges";
 import "./tableauBord.css";
-
 import Historique from "../components/Historique";
-import "./tableauBord.css";
+import Point from "../components/Point";
 
 function TableauBord() {
   return (
-    <div>
+    <div className="bord">
+      <Point />
       <div className="badge">
         <Badges />
       </div>
-      <Historique />
+      <div className="historique">
+        <Historique />
+      </div>
     </div>
   );
 }
