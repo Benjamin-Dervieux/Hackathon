@@ -1,8 +1,14 @@
 import React from 'react';
+import LevelResult from '../components/LevelResult';
 import './resultats.css';
 
-function Resultats() {
-  return <div>Resultats</div>;
+const result = () => {
+  return ( 
+      <div>
+        <LevelResult />
+      </div>
+    
+  );
 }
 
-export default Resultats;
+export default result;
