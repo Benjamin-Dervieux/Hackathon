@@ -3,11 +3,14 @@ import './slide.css';
 import car from '../assets/car.png';
 import man from '../assets/man.png';
 import axios from 'axios';
+import DisplayMap from './DisplayMap';
+import { Link } from 'react-router-dom';
 
 function Slide() {
   //IN
   const [dataIn, setDataIn] = useState([]);
   const [searchValueIn, setSearchValueIn] = useState();
+
   useEffect(() => {
     axios
       .get(
@@ -19,7 +22,6 @@ function Slide() {
       });
   }, [searchValueIn]);
   console.log(dataIn);
-  console.log(searchValueIn);
 
   //OUT
   const [dataOut, setDataOut] = useState([]);
@@ -35,11 +37,8 @@ function Slide() {
       });
   }, [searchValueOut]);
   console.log(dataOut);
-  console.log(searchValueOut);
-
   return (
     <div className="slideContainer">
-      <div className="topSlide"></div>
       <div className="chooseContainer">
         <div className="inputContainer">
           <p>Votre trajet</p>
@@ -55,15 +54,17 @@ function Slide() {
         <div className="infoContainer">
           <div className="carContainer">
             <img className="logo1" src={car} alt=""></img>
-            <p>kg de Co2</p>
+            <p className="slideParagraphe">kg de Co2</p>
           </div>
           <div className="walkContainer">
             <img className="logo2" src={man} alt=""></img>
-            <p>points</p>
+            <p className="slideParagraphe">points</p>
           </div>
         </div>
       </div>
-      <button>GO !</button>
+      <Link to="/ViewLive">
+        <button>GO !</button>
+      </Link>
     </div>
   );
 }
