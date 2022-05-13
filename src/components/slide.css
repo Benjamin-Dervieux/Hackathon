@@ -4,7 +4,7 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 60vh;
+  height: 55vh;
   right: 0vh;
   flex-direction: column;
   background-color: var(--color-bg-variant);
@@ -36,25 +36,26 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 40px;
+  height: 60px;
   margin: 10px 0px 10px 0px;
   border-radius: 10px;
   background-color: white;
-  padding-left: 40px;
-  font-size: 20px;
-  font-weight: 600;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .carContainer,
 .walkContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 60px;
   width: 100%;
   margin: 10px 0px 10px 0px;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 30px 0px 7px;
   background-color: white;
+  border-radius: 10px;
 }
 
 .slideContainer button {
@@ -76,5 +77,13 @@
 }
 
 .logo2 {
-  height: 30px;
+  height: 40px;
+  width: 30px;
+  margin-left: 15px;
+}
+.slideParagraphe {
+  position: absolute;
+  font-size: 15px;
+  color: black;
+  left: 250px;
 }

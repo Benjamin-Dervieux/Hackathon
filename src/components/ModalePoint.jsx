@@ -1,7 +1,7 @@
 import React from 'react';
 import '../screen/Home';
 import Slide from '../components/Slide';
-import { CgClose } from 'react-icons/cg';
+import { TiArrowDownThick } from 'react-icons/ti';
 
 const ModalePoint = ({ revele, cache }) =>
   revele ? (
@@ -10,9 +10,17 @@ const ModalePoint = ({ revele, cache }) =>
       <div className="wrap">
         <div className="mod">
           <div className="clos">
-            <button type="button" onClick={cache}>
+            <button className="btns" type="button" onClick={cache}>
               <span>
-                <CgClose />
+                <TiArrowDownThick
+                  style={{
+                    background: '#eef1f6',
+                    borderRadius: '50px',
+                    color: 'black',
+                    fontSize: '20pt',
+                    width: '50px',
+                  }}
+                />
               </span>
             </button>
           </div>
